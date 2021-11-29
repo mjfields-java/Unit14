@@ -1,8 +1,8 @@
 def retirementAgeCalculate(birthYear, birthMonth):
     if birthYear < 1900:
-        raise ValueError(f'Birth year "{birthYear}" must be no earlier than 1900')
+        raise ValueError(f'Birth year "{birthYear}" can not be earlier than 1900')
     elif birthYear > 2021:
-        raise ValueError(f'Birth year "{birthYear}" must be earlier than 2021')
+        raise ValueError(f'Birth year "{birthYear}" must be before 2021')
 
     retirementAgeYear  = 65
     retirementAgeMonth = 0
